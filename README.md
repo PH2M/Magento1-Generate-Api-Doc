@@ -1,6 +1,7 @@
 # Magento 1 REST API documentation generator
 
 Magento PHP script for generate your Magento API REST documentation.
+
 ![Latest version](https://img.shields.io/badge/latest-v0.0.1-red.svg)
 ![PHP >= 5.3](https://img.shields.io/badge/php-%3E=5.3-green.svg)
 ![Magento 1.9.3](https://img.shields.io/badge/magento-1.9.3-blue.svg)
@@ -25,3 +26,6 @@ You can now access to your Magento 1 REST API documentation on {MAGENTO_BASE_URL
 
 ## Contributing
 This is a collaborative project. [Pull requests](https://github.com/PH2M/Magento1-Generate-Api-Doc/pulls) are welcome
+
+## Example
+You can see the result when you generate documentation on [Magento LTS](https://github.com/OpenMage/magento-lts): https://ph2m.github.io/Magento1-Generate-Api-Doc/index.html
