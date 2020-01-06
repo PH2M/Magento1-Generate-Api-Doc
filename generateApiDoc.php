@@ -11,7 +11,7 @@ class Mage_Shell_GenerateApiDoc extends Mage_Shell_Abstract
 
     protected $doc = '';
     protected $resources = '';
-
+    protected $eavAttributes = [];
     /**
      * Run script
      *
@@ -21,6 +21,7 @@ class Mage_Shell_GenerateApiDoc extends Mage_Shell_Abstract
         $this->doc = '<?php' . PHP_EOL;
 
         $this->retrieveResources();
+        $this->prepareEavAttributes();
         $this->createApiDocConfigFile();
         foreach ($this->resources as $i => $resource) {
             $privileges = $this->getResourcePrivilege($resource);
@@ -33,6 +34,34 @@ class Mage_Shell_GenerateApiDoc extends Mage_Shell_Abstract
         }
         $this->doc .= ' ?>';
         file_put_contents(Mage::getBaseDir() . DS . 'api' . DS . 'input' . DS . 'apidoc.php', $this->doc);
+    }
+
+    protected function prepareEavAttributes()
+    {
+        $attributes = Mage::getResourceModel('eav/entity_attribute_collection');
+        $attributeTypeCollection = Mage::getResourceModel('eav/entity_type_collection')->toArray(['entity_type_id', 'entity_model']);
+        $attributeTypeCollection = $attributeTypeCollection['items'];
+        $attributeTypes = [];
+        foreach ($attributeTypeCollection as $attributeType) {
+            $attributeTypes[$attributeType['entity_type_id']] = $attributeType['entity_model'];
+
+        }
+        foreach ($attributes as $attribute) {
+            $attributeModel = $attributeTypes[$attribute->getEntityTypeId()];
+            $this->eavAttributes[$attributeModel][$attribute->getAttributeCode()] = ['type' => $this->convertBackendTypeToApiType($attribute->getBackendType()), 'label' => $attribute->getFrontendLabel()];
+        }
+    }
+
+    protected function convertBackendTypeToApiType($backendType) {
+        $convert = [
+            'text' => 'String',
+            'varchar' => 'String',
+            'int' => 'Number',
+            'decimal' => 'Number',
+            'datetime' => 'Number',
+            'static' => 'String'
+        ];
+        return $convert[$backendType];
     }
 
     protected function getResourcePrivilege($resource)
@@ -83,32 +112,41 @@ class Mage_Shell_GenerateApiDoc extends Mage_Shell_Abstract
 
     protected function retrieveApiDocRoute($route, $group, $requestType, $permissions, $resource)
     {
+        $title = $resource->title . ' ' . $route['action_type'];
         $this->doc .= '/**' . PHP_EOL;
-        $this->doc .= ' * @api {' . $requestType . '} ' . $route['route'] . PHP_EOL;
+        $this->doc .= ' * @api {' . $requestType . '} /' . trim( $route['route'], '/' ) . ' ' . $title . PHP_EOL;
         foreach ($permissions as $permission) {
             $this->doc .= ' * @apiPermission ' . $permission . PHP_EOL;
         }
         $this->doc .= ' * @apiName ' . $resource->title->asArray() . ' ' . $route['action_type'] . PHP_EOL;
         $this->doc .= ' * @apiGroup ' . $group->asArray() . PHP_EOL;
         if ($resource->attributes) {
+            $paramOrSuccess = 'apiParam';
             if ($requestType == 'get') {
-                foreach ($resource->attributes->asArray() as $id => $attributes) {
-                    if ($id == '@' || !is_string($id)) {
-                        continue;
-                    }
-                    $this->doc .= ' * @apiSuccess {String} ' . $id . PHP_EOL;
+                $paramOrSuccess = 'apiSuccess';
+            }
+            foreach ($resource->attributes->asArray() as $id => $attributes) {
+                if ($id == '@' || !is_string($id)) {
+                    continue;
                 }
-            } else {
-                foreach ($resource->attributes->asArray() as $id => $attributes) {
-                    if ($id == '@' || !is_string($id)) {
-                        continue;
-                    }
-                    $this->doc .= ' * @apiParam {String} ' . $id . PHP_EOL;
-                }
+                $attributeDetails = $this->retrieveAttributeDetails($id, $resource);
+                $this->doc .= ' * @' . $paramOrSuccess . ' ' . $attributeDetails . PHP_EOL;
             }
 
         }
         $this->doc .= '**/' . PHP_EOL;
+    }
+
+    protected function retrieveAttributeDetails($id, $resource)
+    {
+        $attributeDetails = '{String} ' . $id;
+        if($resource->working_model) {
+            $model = $resource->working_model->asArray();
+            if (array_key_exists($model, $this->eavAttributes) && array_key_exists($id, $this->eavAttributes[$model])) {
+                $attributeDetails = '{' .$this->eavAttributes[$model][$id]['type'] .'} ' . $id . ' ' . $this->eavAttributes[$model][$id]['label'];
+            }
+        }
+        return $attributeDetails;
     }
 }
 

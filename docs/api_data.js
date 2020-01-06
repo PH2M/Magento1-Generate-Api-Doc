@@ -2,7 +2,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -155,7 +155,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/store/:store",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -308,7 +308,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/category/:category_id",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -461,7 +461,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/store/:store/category/:category_id",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -614,7 +614,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/category/:category_id/store/:store",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -767,7 +767,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -914,7 +914,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/store/:store",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -1061,7 +1061,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/category/:category_id",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -1208,7 +1208,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/store/:store/category/:category_id",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -1355,7 +1355,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/category/:category_id/store/:store",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -1502,7 +1502,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -1649,7 +1649,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/store/:store",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -1796,7 +1796,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/category/:category_id",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -1943,7 +1943,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/store/:store/category/:category_id",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -2090,7 +2090,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/category/:category_id/store/:store",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -2237,7 +2237,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -2384,7 +2384,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/store/:store",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -2531,7 +2531,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/category/:category_id",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -2678,7 +2678,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/store/:store/category/:category_id",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -2825,7 +2825,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/category/:category_id/store/:store",
-    "title": "",
+    "title": "Catalog Product collection",
     "permission": [
       {
         "name": "admin"
@@ -2972,7 +2972,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:id",
-    "title": "",
+    "title": "Catalog Product entity",
     "permission": [
       {
         "name": "admin"
@@ -3125,7 +3125,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:id/store/:store",
-    "title": "",
+    "title": "Catalog Product entity",
     "permission": [
       {
         "name": "admin"
@@ -3278,7 +3278,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:id",
-    "title": "",
+    "title": "Catalog Product entity",
     "permission": [
       {
         "name": "admin"
@@ -3425,7 +3425,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:id/store/:store",
-    "title": "",
+    "title": "Catalog Product entity",
     "permission": [
       {
         "name": "admin"
@@ -3572,7 +3572,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:id",
-    "title": "",
+    "title": "Catalog Product entity",
     "permission": [
       {
         "name": "admin"
@@ -3719,7 +3719,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:id/store/:store",
-    "title": "",
+    "title": "Catalog Product entity",
     "permission": [
       {
         "name": "admin"
@@ -3866,7 +3866,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/:id",
-    "title": "",
+    "title": "Catalog Product entity",
     "permission": [
       {
         "name": "admin"
@@ -4013,7 +4013,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/:id/store/:store",
-    "title": "",
+    "title": "Catalog Product entity",
     "permission": [
       {
         "name": "admin"
@@ -4160,7 +4160,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:id/categories",
-    "title": "",
+    "title": "Product Category collection",
     "permission": [
       {
         "name": "admin"
@@ -4194,7 +4194,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:id/categories",
-    "title": "",
+    "title": "Product Category collection",
     "permission": [
       {
         "name": "admin"
@@ -4222,7 +4222,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:id/categories",
-    "title": "",
+    "title": "Product Category collection",
     "permission": [
       {
         "name": "admin"
@@ -4250,7 +4250,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:id/categories/:category_id",
-    "title": "",
+    "title": "Product Category entity",
     "permission": [
       {
         "name": "admin"
@@ -4284,7 +4284,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:id/categories/:category_id",
-    "title": "",
+    "title": "Product Category entity",
     "permission": [
       {
         "name": "admin"
@@ -4312,7 +4312,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:id/categories/:category_id",
-    "title": "",
+    "title": "Product Category entity",
     "permission": [
       {
         "name": "admin"
@@ -4340,7 +4340,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:id/images",
-    "title": "",
+    "title": "Product Image collection",
     "permission": [
       {
         "name": "admin"
@@ -4430,7 +4430,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:id/images/store/:store",
-    "title": "",
+    "title": "Product Image collection",
     "permission": [
       {
         "name": "admin"
@@ -4520,7 +4520,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:id/images",
-    "title": "",
+    "title": "Product Image collection",
     "permission": [
       {
         "name": "admin"
@@ -4604,7 +4604,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:id/images/store/:store",
-    "title": "",
+    "title": "Product Image collection",
     "permission": [
       {
         "name": "admin"
@@ -4688,7 +4688,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:id/images",
-    "title": "",
+    "title": "Product Image collection",
     "permission": [
       {
         "name": "admin"
@@ -4772,7 +4772,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:id/images/store/:store",
-    "title": "",
+    "title": "Product Image collection",
     "permission": [
       {
         "name": "admin"
@@ -4856,7 +4856,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/:id/images",
-    "title": "",
+    "title": "Product Image collection",
     "permission": [
       {
         "name": "admin"
@@ -4940,7 +4940,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/:id/images/store/:store",
-    "title": "",
+    "title": "Product Image collection",
     "permission": [
       {
         "name": "admin"
@@ -5024,7 +5024,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:id/images/:image",
-    "title": "",
+    "title": "Product Image entity",
     "permission": [
       {
         "name": "admin"
@@ -5114,7 +5114,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:id/images/:image/store/:store",
-    "title": "",
+    "title": "Product Image entity",
     "permission": [
       {
         "name": "admin"
@@ -5204,7 +5204,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:id/images/:image",
-    "title": "",
+    "title": "Product Image entity",
     "permission": [
       {
         "name": "admin"
@@ -5288,7 +5288,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:id/images/:image/store/:store",
-    "title": "",
+    "title": "Product Image entity",
     "permission": [
       {
         "name": "admin"
@@ -5372,7 +5372,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:id/images/:image",
-    "title": "",
+    "title": "Product Image entity",
     "permission": [
       {
         "name": "admin"
@@ -5456,7 +5456,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:id/images/:image/store/:store",
-    "title": "",
+    "title": "Product Image entity",
     "permission": [
       {
         "name": "admin"
@@ -5540,7 +5540,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/:id/images/:image",
-    "title": "",
+    "title": "Product Image entity",
     "permission": [
       {
         "name": "admin"
@@ -5624,7 +5624,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/products/:id/images/:image/store/:store",
-    "title": "",
+    "title": "Product Image entity",
     "permission": [
       {
         "name": "admin"
@@ -5708,7 +5708,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:product_id/websites",
-    "title": "",
+    "title": "Product Website collection",
     "permission": [
       {
         "name": "admin"
@@ -5723,7 +5723,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:product_id/websites",
-    "title": "",
+    "title": "Product Website collection",
     "permission": [
       {
         "name": "admin"
@@ -5738,7 +5738,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:product_id/websites",
-    "title": "",
+    "title": "Product Website collection",
     "permission": [
       {
         "name": "admin"
@@ -5753,7 +5753,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/products/:product_id/websites/:website_id",
-    "title": "",
+    "title": "Product Website entity",
     "permission": [
       {
         "name": "admin"
@@ -5768,7 +5768,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/products/:product_id/websites/:website_id",
-    "title": "",
+    "title": "Product Website entity",
     "permission": [
       {
         "name": "admin"
@@ -5783,7 +5783,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/products/:product_id/websites/:website_id",
-    "title": "",
+    "title": "Product Website entity",
     "permission": [
       {
         "name": "admin"
@@ -5798,7 +5798,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/stockitems",
-    "title": "",
+    "title": "Stock Item collection",
     "permission": [
       {
         "name": "admin"
@@ -5994,7 +5994,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/stockitems",
-    "title": "",
+    "title": "Stock Item collection",
     "permission": [
       {
         "name": "admin"
@@ -6190,7 +6190,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/stockitems/:id",
-    "title": "",
+    "title": "Stock Item entity",
     "permission": [
       {
         "name": "admin"
@@ -6386,7 +6386,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/stockitems/:id",
-    "title": "",
+    "title": "Stock Item entity",
     "permission": [
       {
         "name": "admin"
@@ -6582,7 +6582,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/customers/:customer_id/addresses",
-    "title": "",
+    "title": "Customer Address collection",
     "permission": [
       {
         "name": "admin"
@@ -6627,7 +6627,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/customers/:customer_id/addresses",
-    "title": "",
+    "title": "Customer Address collection",
     "permission": [
       {
         "name": "admin"
@@ -6672,7 +6672,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/customers/:customer_id/addresses",
-    "title": "",
+    "title": "Customer Address collection",
     "permission": [
       {
         "name": "admin"
@@ -6717,7 +6717,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/customers/:customer_id/addresses",
-    "title": "",
+    "title": "Customer Address collection",
     "permission": [
       {
         "name": "admin"
@@ -6762,7 +6762,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/customers/addresses/:id",
-    "title": "",
+    "title": "Customer Address entity",
     "permission": [
       {
         "name": "admin"
@@ -6807,7 +6807,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/customers/addresses/:id",
-    "title": "",
+    "title": "Customer Address entity",
     "permission": [
       {
         "name": "admin"
@@ -6852,7 +6852,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/customers/addresses/:id",
-    "title": "",
+    "title": "Customer Address entity",
     "permission": [
       {
         "name": "admin"
@@ -6897,7 +6897,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/customers/addresses/:id",
-    "title": "",
+    "title": "Customer Address entity",
     "permission": [
       {
         "name": "admin"
@@ -6942,7 +6942,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/customers",
-    "title": "",
+    "title": "Customer collection",
     "permission": [
       {
         "name": "admin"
@@ -6975,56 +6975,56 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "firstname",
-            "description": ""
+            "description": "<p>First Name</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "lastname",
-            "description": ""
+            "description": "<p>Last Name</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "email",
-            "description": ""
+            "description": "<p>Email</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "website_id",
-            "description": ""
+            "description": "<p>Associate to Website</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "created_in",
-            "description": ""
+            "description": "<p>Created From</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "group_id",
-            "description": ""
+            "description": "<p>Group</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "confirmation",
-            "description": ""
+            "description": "<p>Is Confirmed</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "disable_auto_group_change",
-            "description": ""
+            "description": "<p>Disable Automatic Group Change Based on VAT ID</p>"
           }
         ]
       }
@@ -7036,7 +7036,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/customers",
-    "title": "",
+    "title": "Customer collection",
     "permission": [
       {
         "name": "admin"
@@ -7066,56 +7066,56 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "firstname",
-            "description": ""
+            "description": "<p>First Name</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "lastname",
-            "description": ""
+            "description": "<p>Last Name</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "email",
-            "description": ""
+            "description": "<p>Email</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "website_id",
-            "description": ""
+            "description": "<p>Associate to Website</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "created_in",
-            "description": ""
+            "description": "<p>Created From</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "group_id",
-            "description": ""
+            "description": "<p>Group</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "confirmation",
-            "description": ""
+            "description": "<p>Is Confirmed</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "disable_auto_group_change",
-            "description": ""
+            "description": "<p>Disable Automatic Group Change Based on VAT ID</p>"
           }
         ]
       }
@@ -7127,7 +7127,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/customers",
-    "title": "",
+    "title": "Customer collection",
     "permission": [
       {
         "name": "admin"
@@ -7160,56 +7160,56 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "firstname",
-            "description": ""
+            "description": "<p>First Name</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "lastname",
-            "description": ""
+            "description": "<p>Last Name</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "email",
-            "description": ""
+            "description": "<p>Email</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "website_id",
-            "description": ""
+            "description": "<p>Associate to Website</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "created_in",
-            "description": ""
+            "description": "<p>Created From</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "group_id",
-            "description": ""
+            "description": "<p>Group</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "confirmation",
-            "description": ""
+            "description": "<p>Is Confirmed</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "disable_auto_group_change",
-            "description": ""
+            "description": "<p>Disable Automatic Group Change Based on VAT ID</p>"
           }
         ]
       }
@@ -7221,7 +7221,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/customers/:id",
-    "title": "",
+    "title": "Customer entity",
     "permission": [
       {
         "name": "admin"
@@ -7254,56 +7254,56 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "firstname",
-            "description": ""
+            "description": "<p>First Name</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "lastname",
-            "description": ""
+            "description": "<p>Last Name</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "email",
-            "description": ""
+            "description": "<p>Email</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "website_id",
-            "description": ""
+            "description": "<p>Associate to Website</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "created_in",
-            "description": ""
+            "description": "<p>Created From</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "group_id",
-            "description": ""
+            "description": "<p>Group</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "confirmation",
-            "description": ""
+            "description": "<p>Is Confirmed</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "disable_auto_group_change",
-            "description": ""
+            "description": "<p>Disable Automatic Group Change Based on VAT ID</p>"
           }
         ]
       }
@@ -7315,7 +7315,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/customers/:id",
-    "title": "",
+    "title": "Customer entity",
     "permission": [
       {
         "name": "admin"
@@ -7345,56 +7345,56 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "firstname",
-            "description": ""
+            "description": "<p>First Name</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "lastname",
-            "description": ""
+            "description": "<p>Last Name</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "email",
-            "description": ""
+            "description": "<p>Email</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "website_id",
-            "description": ""
+            "description": "<p>Associate to Website</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "created_in",
-            "description": ""
+            "description": "<p>Created From</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "group_id",
-            "description": ""
+            "description": "<p>Group</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "confirmation",
-            "description": ""
+            "description": "<p>Is Confirmed</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "disable_auto_group_change",
-            "description": ""
+            "description": "<p>Disable Automatic Group Change Based on VAT ID</p>"
           }
         ]
       }
@@ -7406,7 +7406,7 @@ define({ "api": [
   {
     "type": "update",
     "url": "/customers/:id",
-    "title": "",
+    "title": "Customer entity",
     "permission": [
       {
         "name": "admin"
@@ -7439,56 +7439,56 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "firstname",
-            "description": ""
+            "description": "<p>First Name</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "lastname",
-            "description": ""
+            "description": "<p>Last Name</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "email",
-            "description": ""
+            "description": "<p>Email</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "website_id",
-            "description": ""
+            "description": "<p>Associate to Website</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "created_in",
-            "description": ""
+            "description": "<p>Created From</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "group_id",
-            "description": ""
+            "description": "<p>Group</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "confirmation",
-            "description": ""
+            "description": "<p>Is Confirmed</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "disable_auto_group_change",
-            "description": ""
+            "description": "<p>Disable Automatic Group Change Based on VAT ID</p>"
           }
         ]
       }
@@ -7500,7 +7500,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/orders",
-    "title": "",
+    "title": "Orders collection",
     "permission": [
       {
         "name": "admin"
@@ -7825,7 +7825,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/orders/:id",
-    "title": "",
+    "title": "Orders entity",
     "permission": [
       {
         "name": "admin"
@@ -8150,7 +8150,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/orders/:order_id/addresses",
-    "title": "",
+    "title": "Order Addresses collection",
     "permission": [
       {
         "name": "admin"
@@ -8272,7 +8272,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/orders/:order_id/addresses/:address_type",
-    "title": "",
+    "title": "Order Addresses entity",
     "permission": [
       {
         "name": "admin"
@@ -8394,7 +8394,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/orders/:id/comments",
-    "title": "",
+    "title": "Order Comments collection",
     "permission": [
       {
         "name": "admin"
@@ -8412,7 +8412,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/orders/:id/items",
-    "title": "",
+    "title": "Order Items collection",
     "permission": [
       {
         "name": "admin"
