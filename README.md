@@ -17,7 +17,7 @@ after running, this script create 2 new files on your `api/input` directory. Thi
 
 2. Generate doc with [apiDoc](https://github.com/apidoc/apidoc) 
 - With Docker :
-    - In your Magento's root directory, run `docker run --rm -v $(pwd)/api:/home/node/apidoc apidoc/apidoc -o doc -i input` (`$(pwd)` is for Linux, for other system see https://stackoverflow.com/questions/41485217/mount-current-directory-as-a-volume-in-docker-on-windows-10#answer-41489151
+    - In your Magento's root directory, run `docker run --rm -v $(pwd)/api:/home/node/apidoc dmitrymomot/apidoc -o doc -i input` (`$(pwd)` is for Linux, for other system see https://stackoverflow.com/questions/41485217/mount-current-directory-as-a-volume-in-docker-on-windows-10#answer-41489151
 - With Npm :
     - You need to install https://github.com/apidoc/apidoc
     - In your Magento's root directory, run `apidoc -i api/input/ -o api/doc/`
